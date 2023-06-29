@@ -32,6 +32,7 @@ module.exports = {
     "changepass_reg": "Kayıt Ol",
     "changepass_wait_title": "Şifre Güncelleniyor!",
     "changepass_wait_desc": "Lütfen Bekleyin İşlem Yapılıyor..",
+    "changepass_button": "Şifreyi Değiştir",
 
     // Password Reset Request
 
@@ -354,8 +355,6 @@ module.exports = {
     "api_accnotfound_title": "Hesap Bulunamadı!",
     "api_accnotfound_desc": "Hesabınız Artık Yok Veya Hiç Var Olmadı!",
 
-
-
     // Api Database
     "api_database_title": "Ciddi Sorun!",
     "api_database_desc": "Database Bağlanırken Sorun Oluştu!",
@@ -365,7 +364,6 @@ module.exports = {
     "back_home_page": "Anasayfa' ya Geri Dön!",
     "back_page": "Geri Dön",
     "search_something": "Birşeyler Arayın..",
-    "buy": "Satın Al",
     "fastlogin": "Hızlı Giriş",
     "noreached": "Ulaşılamadı!",
     "email_or_username": "Email / Kullanıcı Adı",
@@ -399,5 +397,9 @@ module.exports = {
     "loading": "Yükleniyor..",
     "mesagewait": "Mesaj..",
     "pagenotfound": "Sayfa Bulunamadı!",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "create": "Oluştur",
+    "explanation": "Açıklama",
+    "send": "Gönder"
+
 }
