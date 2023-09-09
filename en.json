@@ -1,412 +1,448 @@
 {
-    "backendProblem": "Our Backend Server Could Not Be Reached.",
+    "backendProblem": "Unable to Reach Our Backend Server.",
     "auth": {
-      "register": {
-        "200": "You Have Successfully Registered (Check Your E-Mail)",
-        "301": "Please Enter Email!",
-        "302": "Please Enter Username!",
-        "303": "Please Enter Password!",
-        "304": "Please Enter Password Again!",
-        "305": "Please Verify Captcha!",
-        "306": "Please enter correct password again!",
-        "307": "Email Already in Use!",
-        "308": "Username Already in Use!",
-        "309": "Captcha Verification Failed!",
-        "310": "Email Outside Allowed Domains!",
-        "311": "Please enter username in lowercase letters only! ",
-        "312": "Your Username Must Be (3-20) Characters!",
-        "313": "Your Password Must Be (3-60) Characters!",
-        "314": "Email Failed to Send!"
-      },
-      "verify": {
-        "200": "Your Email Has Been Verified Successfully, You Are Being Redirected..!",
-        "301": "Email Verification Code Not Found!",
-        "302": "Email Verification Code Invalid!",
-        "303": "User not found!",
-        "304": "Code Already Used!"
-      },
-      "login": {
-        "200": "You have successfully logged in.",
-        "301": "Please Enter Email/Username!",
-        "302": "Please Enter Password!",
-        "303": "Incorrect login information, try again.",
-        "304": "Email Verification Required, Check Your Email!",
-        "305": "Token Could Not Be Verified!"
-      }
-    },
-    "api": {
-      "home": {
-        "301": "Type Not Found",
-        "302": "Genre Not Selected"
-      },
-      "product": {
-        "301": "SEO Url Not Entered",
-        "302": "Product Not Found!"
-      },
-      "category": {
-        "301": "Category Id Not Entered"
-      },
-      "buy": {
-        "200": "You Have Successfully Purchased The Product.",
-        "301": "User Token Not Found",
-        "302": "Product Id Not Found",
-        "303": "User Login Invalid!",
-        "304": "Product Not Found!",
-        "305": "Please fill out the Purchase Form Completely and Correctly!",
-        "306": "You Don't Have Enough Balance! ",
-        "307": "Item Out of Stock Or Terminated By Admin!"
-      },
-      "panel": {
-        "301": "User Token Not Found",
-        "302": "User Login Invalid!"
-      },
-      "settings": {
-        "301": "User Token Not Found",
-        "302": "Please Enter Current Password",
-        "303": "User Login Invalid",
-        "304": "Current Password Entered Incorrectly",
-        "305": "Please Set a Password within 3-60 Character Limit",
-        "306": "Please Enter a Valid Phone Number!"
-      },
-      "loadLastPayment": {
-        "301": "User Token Not Found",
-        "302": "User Login Invalid!",
-        "303": "Entered Information Not Found!"
-      },
-      "addMoney": {
-        "301": "User Token Not Found",
-        "302": "Amount Entered Incorrectly!",
-        "303": "You can upload minimum 5₺!",
-        "304": "Token Invalid!",
-        "305": "Payment Provider Denied Your Information!"
-      },
-      "myOrders": {
-        "301": "User Token Not Found",
-        "302": "User Login Invalid!"
-      },
-      "admin": {
-        "301": "User Token Not Found",
-        "302": "User Login Invalid!",
-        "303": "Unauthorized Transaction!"
-      },
-      "adminProducts": {
-        "301": "User Token Not Found",
-        "302": "User Login Invalid!",
-        "303": "Unauthorized Transaction!"
-      },
-      "adminOrders": {
-        "301": "User Token Not Found",
-        "302": "User Login Invalid!",
-        "303": "Unauthorized Transaction!"
-      },
-      "adminCreateProduct": {
-        "200": "Product Added Successfully!",
-        "301": "User Token Not Found",
-        "302": "No Title Entered!",
-        "303": "No Price Entered!",
-        "304": "Category Not Entered!",
-        "305": "No Description Entered!",
-        "306": "No Photo Entered!",
-        "307": "Questions Problem!",
-        "309": "User Login Invalid!",
-        "310": "Unauthorized Transaction!"
-      },
-      "adminEditProduct": {
-        "200": "Successfully Updated Product!",
-        "301": "User Token Not Found",
-        "302": "No Title Entered!",
-        "303": "No Price Entered!",
-        "304": "Category Not Entered!",
-        "305": "No Photo Entered!",
-        "307": "Questions Problem!",
-        "309": "User Login Invalid!",
-        "310": "Unauthorized Transaction!",
-        "311": "Product Not Found!"
-      },
-      "adminOrderSend": {
-        "200": "Successfully Updated Order!",
-        "301": "User Token Not Found",
-        "302": "Id Not Found!",
-        "303": "Status Not Entered!",
-        "304": "User Login Invalid!",
-        "305": "Unauthorized Transaction!",
-        "306": "Order Not Found!"
-      }
-    },
-    "renders": {
-      "user": "{{x1}} Product"
-    },
-    "pages": {
-      "register": {
-        "name": "Register",
-        "title": "Register",
-        "form_loading": "Checking Information..",
-        "form_problem": "A Problem Occurred While Processing Information",
-        "success": "Account Created Successfully, Check Your Email.",
-        "form": {
-          "email": "E-mail",
-          "username": "User name",
-          "password": "Password",
-          "repassword": "Password Again",
-          "button": "Register"
-        },
-        "google": {
-          "text": "Register with Google"
+        "register": {
+            "301": "Please Enter an Email!",
+            "302": "Please Enter a Username!",
+            "303": "Please Enter a Password!",
+            "304": "Please Enter Password Again!",
+            "305": "Please Verify the Captcha!",
+            "306": "Please Enter the Password Again Correctly!",
+            "307": "Email Already in Use!",
+            "308": "Username Already in Use!",
+            "309": "Captcha Verification Failed!",
+            "310": "Email Is Outside Allowed Domains!",
+            "311": "Please Enter Username in Lowercase Only! (utf-8 is invalid.)",
+            "312": "Your Username Must Be (3-20) Characters!",
+            "313": "Your Password Must Be (3-60) Characters!",
+            "314": "Email Could Not Be Sent!",
+            "200": "Successfully Registered (Check Your Email)"
         },
         "verify": {
-          "loading": "Email Verifying.."
+            "301": "Email Verification Code Not Found!",
+            "302": "Invalid Email Verification Code!",
+            "303": "User Not Found!",
+            "304": "Code Already Used!",
+            "200": "Email Successfully Verified, Redirecting..."
+        },
+        "login": {
+            "301": "Please Enter Email/Username!",
+            "302": "Please Enter Password!",
+            "303": "Incorrect Login Credentials, Please Try Again.",
+            "304": "Email Verification Required, Check Your Email!",
+            "305": "Token Verification Failed!",
+            "200": "Successfully Logged In."
         }
-      },
-      "login": {
-        "loading": "Checking Information..",
-        "problem": "A Problem Occurred While Processing Information",
-        "title": "Login",
-        "email": "E-mail",
-        "or": "Or",
-        "username": "User name",
-        "password": "Password",
-        "forgetme": "Remember me",
-        "noacc1": "I do not have an account?",
-        "noacc2": "Create Account",
-        "forgetpassword": "I forgot my password",
-        "button": "Login"
-      },
-      "product": {
-        "loading": "Loading Please Wait..",
-        "problem": {
-          "name": "Failed to load",
-          "desc": "The Product Could Not Be Installed Due To An Interface-Related Problem!"
-        },
-        "render": {
-          "loading": "The product is being purchased..",
-          "detail": "Order Details",
-          "price": "Product price",
-          "commission": "Commission",
-          "totalprice": "Total Fee",
-          "buy": "Buy",
-          "login": "Login"
-        },
-        "modal": {
-          "title": "Purchase",
-          "button": "Buy",
-          "problem": "A Problem Occurred While Processing Information",
-          "footer": "All information entered will be processed, it is not possible to retrieve it."
-        }
-      },
-      "notfound": {
-        "name": "Page Not Found!",
-        "desc": "Sorry, the page you are looking for does not exist or has been moved.",
-        "titlecontent": "Page Not Found",
-        "content": "Sorry, the page you are looking for does not exist or has been moved.",
-        "back": "Turn back",
-        "home": "Go to Home Page!"
-      },
-      "home": {
-        "loading": "Loading Please Wait..",
-        "tabs": {
-          "popular": "Preferred",
-          "highlights": "Highlights",
-          "new": "Newly Added"
-        },
-        "layouts": {
-          "ourteam": {
-            "title": "Our team",
-            "content": "Our team consists of passionate and innovative professionals, and together we undertake major projects."
-          },
-          "preferus": {
-            "title": "Those Who Prefer Us",
-            "content": "We provide service to our customers who want to achieve quality and cheap. ",
-            "users": "Users",
-            "client": "Customer"
-          },
-          "userslider": {
-            "title": "Top Buyers",
-            "content": "We provide service to our customers who want to achieve quality and cheap. "
-          }
-        }
-      },
-      "dashboard": {
-        "settings": {
-          "name": "Settings",
-          "desc": "You Can Easily Ensure Your Security with Settings!",
-          "loading": "Checking Information..",
-          "problem": "A Problem Occurred While Processing Information",
-          "success": "Successfully, Your Account Has Been Updated. ",
-          "pagetitle": "Settings",
-          "formtitle": "Token Will Change!",
-          "form": {
-            "password": "Password",
-            "passwordPlace": "Enter Your Current Password..",
-            "newpassword": "New Password (Optional)",
-            "newpasswordPlace": "Enter New Password..",
-            "phone": "Telephone (Optional)",
-            "phonePlace": "Enter Phone.."
-          },
-          "button": "Update"
-        },
-        "reference": {
-          "name": "Reference",
-          "desc": "Earn Balance with Our Referral System!",
-          "titles": {
-            "1": "How does it work?",
-            "2": "Platforms",
-            "3": "Conditions",
-            "4": "Awards",
-            "5": "Rules"
-          },
-          "contents": {
-            "1": "Share a Video Using Inelity, Let Us Know via the Support System. ",
-            "2": "You Can Only Use Youtube as a Platform.",
-            "3": " * 1k Subscribers\n ",
-            "4": " * 100 Views = 10₺\n ",
-            "5": "Everyone Can Benefit Once, You Can Get The Prize Of The Video Once!"
-          }
-        },
-        "myorders": {
-          "name": "my orders",
-          "desc": "You can see and review the status of all your orders.",
-          "loading": "Loading Data..",
-          "pagetitle": "my orders",
-          "table": {
-            "id": "ID",
-            "product": "Product",
-            "date": "History",
-            "price": "Price",
-            "status": "Situation"
-          },
-          "status": {
-            "1": "Was delivered!",
-            "2": "Delivery Awaiting..",
-            "3": "Returned!",
-            "4": "Link Provided!"
-          }
-        },
-        "sidebar": {
-          "home": "Home page",
-          "orders": "my orders",
-          "addmoney": "Load Balance",
-          "ticket": "Support Request",
-          "api": "API",
-          "reference": "Reference",
-          "settings": "Settings",
-          "admin": "Admin Panel",
-          "quit": "Log out",
-          "ticketMessage": "You Can Use Live Support On The Left!"
-        },
+    },
+    "api": {
         "home": {
-          "name": "Panel",
-          "desc": "You can easily manage with the Customer Management Panel!",
-          "loading": "Loading Data..",
-          "cards": {
-            "1": "Balance",
-            "2": "Spending",
-            "3": "Shopping"
-          },
-          "form": {
-            "1": {
-              "1": "Product",
-              "2": "History",
-              "3": "Price"
-            },
-            "2": {
-              "1": "Process",
-              "2": "History",
-              "3": "Amount"
-            }
-          },
-          "titles": {
-            "1": "Payment History",
-            "2": "Balance Movements"
-          },
-          "status": {
-            "1": "Purchase",
-            "2": "Loading",
-            "3": "Return"
-          }
+            "301": "Category Not Found",
+            "302": "Category Not Selected"
         },
-        "api": {
-          "name": "API",
-          "desc": "Api Automatic Shopping Binding Details",
-          "title": "Trivia",
-          "content": "You can connect to API using Glycon Infrastructure. ",
-          "button": "Copy",
-          "footer": "No Other Installation Details Required."
+        "product": {
+            "301": "No SEO URL Provided",
+            "302": "Product Not Found!"
+        },
+        "category": {
+            "301": "Category ID Not Provided"
+        },
+        "buy": {
+            "301": "User Token Not Found",
+            "302": "Product ID Not Found",
+            "303": "Invalid User Login!",
+            "304": "Product Not Found!",
+            "305": "Please Fill in the Purchase Form Completely and Accurately!",
+            "306": "You Don't Have Sufficient Balance! Please Add Balance!",
+            "307": "Product Out of Stock or Terminated by Administrator!",
+            "200": "Successfully Purchased the Product."
+        },
+        "panel": {
+            "301": "User Token Not Found",
+            "302": "Invalid User Login!"
+        },
+        "settings": {
+            "301": "User Token Not Found",
+            "302": "Please Enter Current Password",
+            "303": "Invalid User Login",
+            "304": "Current Password Entered Incorrectly",
+            "305": "Please Set a Password Within 3-60 Characters Limit",
+            "306": "Please Enter a Valid Phone Number!"
+        },
+        "loadLastPayment": {
+            "301": "User Token Not Found",
+            "302": "Invalid User Login!",
+            "303": "No Entered Information Found!"
         },
         "addMoney": {
-          "name": "Load Balance",
-          "desc": "It's Time to Add Your First Balance to Inelity!",
-          "loading": "Checking Information..",
-          "problem": "A Problem Occurred While Processing Information",
-          "title": "Load Balance",
-          "form": {
-            "amount": "Amount",
-            "amountPlace": "Enter Quantity..",
-            "usersurname": "Name and surname",
-            "usersurnamePlace": "Enter Name and Surname..",
-            "phone": "Telephone",
-            "phonePlace": "Enter Phone..",
-            "address": "Address",
-            "addressPlace": "Enter Address..",
-            "button": "Load"
-          }
+            "301": "User Token Not Found",
+            "302": "Incorrect Amount Entered!",
+            "303": "Minimum Load Amount is 5₺!",
+            "304": "Invalid Token!",
+            "305": "Payment Provider Rejected Your Information!"
+        },
+        "myOrders": {
+            "301": "User Token Not Found",
+            "302": "Invalid User Login!"
+        },
+        "admin": {
+            "301": "User Token Not Found",
+            "302": "Invalid User Login!",
+            "303": "Unauthorized Operation!"
+        },
+        "adminProducts": {
+            "301": "User Token Not Found",
+            "302": "Invalid User Login!",
+            "303": "Unauthorized Operation!"
+        },
+        "adminOrders": {
+            "301": "User Token Not Found",
+            "302": "Invalid User Login!",
+            "303": "Unauthorized Operation!"
+        },
+        "adminCreateProduct": {
+            "301": "User Token Not Found",
+            "302": "Title Not Entered!",
+            "303": "Price Not Entered!",
+            "304": "Category Not Entered!",
+            "305": "Description Not Entered!",
+            "306": "Photo Not Uploaded!",
+            "307": "Questions Problem!",
+            "309": "Invalid User Login!",
+            "310": "Unauthorized Operation!",
+            "200": "Product Successfully Added!"
+        },
+        "adminEditProduct": {
+            "301": "User Token Not Found",
+            "302": "Title Not Entered!",
+            "303": "Price Not Entered!",
+            "304": "Category Not Entered!",
+            "305": "Photo Not Uploaded!",
+            "307": "Questions Problem!",
+            "309": "Invalid User Login!",
+            "310": "Unauthorized Operation!",
+            "311": "Product Not Found!",
+            "200": "Product Successfully Updated!"
+        },
+        "adminOrderSend": {
+            "301": "User Token Not Found",
+            "302": "ID Not Found!",
+            "303": "Status Not Entered!",
+            "304": "Invalid User Login!",
+            "305": "Unauthorized Operation!",
+            "306": "Order Not Found!",
+            "200": "Order Successfully Updated!"
         }
-      },
-      "category": {
-        "name": "Category",
-        "desc": "Explore Categorized Products in Inelity!",
-        "loading": "Category Loading..",
-        "error": "Category Could Not Be Loaded!",
-        "search": {
-          "place": "Call..",
-          "button": "Search"
-        },
-        "noProducts": "No Products Found",
-        "next": "Next",
-        "prev": "Former",
-        "noCategory": "Category Not Found!",
-        "sidebar": "categories"
-      }
     },
-    "layouts": {
-      "header": {
-        "home": "Home page",
-        "discord": {
-          "1": "Buy Server",
-          "2": "Buy Boost",
-          "3": "Buy Member",
-          "4": "Other"
+    "renders": {
+        "user": "{{x1}} Product"
+    },
+    "pages": {
+        "register": {
+            "name": "Register",
+            "title": "Register",
+            "form_loading": "Checking Information...",
+            "form_problem": "Problem Occurred While Processing Information",
+            "success": "Account Created Successfully, Check Your Email.",
+            "form": {
+                "email": "E-Mail",
+                "username": "Username",
+                "password": "Password",
+                "repassword": "Password Again",
+                "button": "Register"
+            },
+            "google": {
+                "text": "Register with Google"
+            },
+            "verify": {
+                "loading": "Verifying Email..."
+            }
         },
-        "instagram": {
-          "1": "Buy Account",
-          "2": "Buy follower",
-          "3": "Buy Likes",
-          "4": "Other"
+        "login": {
+            "loading": "Checking Information...",
+            "problem": "Problem Occurred While Processing Information",
+            "title": "Login",
+            "email": "E-Mail",
+            "or": "Or",
+            "username": "Username",
+            "password": "Password",
+            "forgetme": "Remember Me",
+            "noacc1": "Don't Have an Account?",
+            "noacc2": "Create an Account",
+            "forgetpassword": "Forgot Password",
+            "button": "Login"
         },
-        "category": "categories",
-        "mobile": {
-          "1": "Software",
-          "2": "Discord",
-          "3": "Instagram",
-          "4": "categories"
+        "product": {
+            "loading": "Loading, Please Wait...",
+            "problem": {
+                "name": "Could Not Be Loaded",
+                "desc": "Product Could Not Be Loaded Due to Interface Issue!"
+            },
+            "render": {
+                "loading": "Purchasing Product...",
+                "detail": "Order Details",
+                "price": "Product Price",
+                "commission": "Commission",
+                "totalprice": "Total Fee",
+                "buy": "Buy",
+                "login": "Login"
+            },
+            "modal": {
+                "title": "Purchase",
+                "button": "Buy",
+                "problem": "Problem Occurred While Processing Information",
+                "footer": "Every Entered Information Will Be Processed and Cannot Be Reversed."
+            }
         },
-        "profile": {
-          "1": "Load Balance",
-          "2": "Go to Panel",
-          "3": "Settings",
-          "4": "Log out"
+        "notfound": {
+            "name": "Page Not Found!",
+            "desc": "Sorry, the page you are looking for does not exist or has been moved.",
+            "titlecontent": "Page Not Found",
+            "content": "Sorry, the page you are looking for does not exist or has been moved.",
+            "back": "Go Back",
+            "home": "Go to Home Page!"
         },
-        "login": "Login"
-      },
-      "head": {
-        "title": "Home page",
-        "desc": "Join Us Now And Join The High Quality, Safe Product Buying Environment!"
-      },
-      "footer": {
-        "text": "Start Safe, Cheap Shopping in All Categories Immediately!",
-        "contact": "Communication",
-        "institutional": "Institutional",
-        "category": "categories",
-        "shortcut": "Shortcut"
-      }
+        "home": {
+            "loading": "Loading, Please Wait...",
+            "tabs": {
+                "popular": "Popular",
+                "highlights": "Highlights",
+                "new": "Newly Added"
+            },
+            "layouts": {
+                "ourteam": {
+                    "title": "Our Team",
+                    "content": "Our team consists of passionate and innovative professionals, working together on great projects."
+                },
+                "preferus": {
+                    "title": "Preferred by Us",
+                    "content": "We provide service to customers who want to catch quality and affordable. Our service philosophy has always been this. QUALITY is expected from those who prefer us. Come and place your order!",
+                    "users": "Users",
+                    "client": "Client"
+                },
+                "userslider": {
+                    "title": "Most Purchased Products",
+                    "content": "We provide service to customers who want to catch quality and affordable. Our service philosophy has always been this. QUALITY is expected from those who prefer us. Come and place your order!"
+                }
+            }
+        },
+        "dashboard": {
+            "settings": {
+                "name": "Settings",
+                "desc": "You Can Easily Secure Your Account with Settings!",
+                "loading": "Checking Information...",
+                "problem": "Problem Occurred While Processing Information",
+                "success": "Account Successfully Updated. You Are Logging Out...",
+                "pagetitle": "Settings",
+                "formtitle": "Token Will Change!",
+                "form": {
+                    "password": "Password",
+                    "passwordPlace": "Enter Your Current Password..",
+                    "newpassword": "New Password (Optional)",
+                    "newpasswordPlace": "Enter New Password..",
+                    "phone": "Phone (Optional)",
+                    "phonePlace": "Enter Phone Number.."
+                },
+                "button": "Update"
+            },
+            "reference": {
+                "name": "Reference",
+                "desc": "Earn Balance with Our Reference System!",
+                "titles": {
+                    "1": "How Does It Work?",
+                    "2": "Platforms",
+                    "3": "Conditions",
+                    "4": "Rewards",
+                    "5": "Rules"
+                },
+                "contents": {
+                    "1": "Share a Video Using Inelity and Notify Us through Support System. We Will Deliver Your Reward. You Can Only Receive a Reward Once for Each Video. It's That Simple!",
+                    "2": "You Can Only Use YouTube as a Platform.",
+                    "3": "* 1k+ Subscribers\n* 200+ Views (Shared Video)",
+                    "4": "* 100+ Views = 10₺\n* 500+ Views = 70₺\n* 1,000+ Views = 150₺",
+                    "5": "Everyone Can Benefit Once, You Can Only Receive the Reward for the Video Once!"
+                }
+            },
+            "myorders": {
+                "name": "My Orders",
+                "desc": "You Can See and Review the Status of All Your Orders.",
+                "loading": "Loading Data...",
+                "pagetitle": "My Orders",
+                "table": {
+                    "id": "ID",
+                    "product": "Product",
+                    "date": "Date",
+                    "price": "Price",
+                    "status": "Status"
+                },
+                "status": {
+                    "1": "Delivered!",
+                    "2": "Awaiting Delivery...",
+                    "3": "Returned!",
+                    "4": "Link Provided!"
+                }
+            },
+            "sidebar": {
+                "home": "Home",
+                "orders": "My Orders",
+                "addmoney": "Add Balance",
+                "ticket": "Support Ticket",
+                "api": "API",
+                "reference": "Reference",
+                "settings": "Settings",
+                "admin": "Admin Panel",
+                "quit": "Log Out",
+                "ticketMessage": "You Can Use Live Support on the Left!"
+            },
+            "home": {
+                "name": "Dashboard",
+                "desc": "You Can Easily Manage with the Customer Management Panel!",
+                "loading": "Loading Data...",
+                "cards": {
+                    "1": "Balance",
+                    "2": "Expense",
+                    "3": "Shopping"
+                },
+                "form": {
+                    "1": {
+                        "1": "Product",
+                        "2": "Date",
+                        "3": "Price"
+                    },
+                    "2": {
+                        "1": "Transaction",
+                        "2": "Date",
+                        "3": "Amount"
+                    }
+                },
+                "titles": {
+                    "1": "Payment History",
+                    "2": "Balance Movements"
+                },
+                "status": {
+                    "1": "Purchase",
+                    "2": "Load",
+                    "3": "Return"
+                }
+            },
+            "api": {
+                "name": "API",
+                "desc": "API Automatic Shopping Connection Details",
+                "title": "Brief Information",
+                "content": "You Can Make an API Connection Using the Glycon Infrastructure. https://api.inelity.com/auto",
+                "button": "Copy",
+                "footer": "It is strictly forbidden to share this information with someone else. Legal actions will be taken against those who violate this situation."
+            },
+            "addmoney": {
+                "name": "Add Balance",
+                "desc": "Add Money to Your Account and Start Shopping!",
+                "loading": "Checking Information...",
+                "problem": "Problem Occurred While Processing Information",
+                "success": "Successfully Added Balance to Your Account!",
+                "pagetitle": "Add Balance",
+                "formtitle": "Check Your Information Before You Continue!",
+                "form": {
+                    "amount": "Amount (₺)",
+                    "amountPlace": "Please Enter Amount (Minimum 5₺)!",
+                    "accounttype": "Account Type",
+                    "accounttypePlace": "Please Select Account Type..",
+                    "couponcode": "Coupon Code (Optional)",
+                    "couponcodePlace": "Please Enter Coupon Code (If You Have)"
+                },
+                "button": "Add"
+            },
+            "ticket": {
+                "name": "Support Ticket",
+                "desc": "Contact Us for All Your Problems and Suggestions!",
+                "loading": "Checking Information...",
+                "problem": "Problem Occurred While Processing Information",
+                "success": "Support Ticket Successfully Created!",
+                "pagetitle": "Create a Support Ticket",
+                "formtitle": "Write the Problems and Your Suggestions Completely and Accurately!",
+                "form": {
+                    "title": "Title",
+                    "titlePlace": "Please Enter a Title..",
+                    "description": "Description",
+                    "descriptionPlace": "Please Enter Your Description..",
+                    "attachment": "Attachment (Optional)"
+                },
+                "button": "Create Ticket"
+            }
+        },
+        "admin": {
+            "products": {
+                "name": "Products",
+                "desc": "You Can Manage and Edit All Products Here!",
+                "loading": "Loading Data...",
+                "pagetitle": "Manage Products",
+                "table": {
+                    "id": "ID",
+                    "title": "Title",
+                    "price": "Price",
+                    "category": "Category",
+                    "status": "Status",
+                    "edit": "Edit",
+                    "delete": "Delete"
+                },
+                "status": {
+                    "1": "Active",
+                    "2": "Hidden",
+                    "3": "Terminated"
+                },
+                "modal": {
+                    "title": "Edit Product",
+                    "formtitle": "Check Your Information Before You Continue!",
+                    "form": {
+                        "title": "Title",
+                        "titlePlace": "Please Enter a Title..",
+                        "price": "Price",
+                        "pricePlace": "Please Enter Price..",
+                        "category": "Category",
+                        "categoryPlace": "Please Select Category..",
+                        "description": "Description",
+                        "descriptionPlace": "Please Enter Description..",
+                        "photo": "Photo (Optional)",
+                        "status": "Status"
+                    },
+                    "button": "Update"
+                },
+                "deleteModal": {
+                    "title": "Delete Product",
+                    "desc": "Are You Sure You Want to Delete This Product Permanently?",
+                    "button": "Delete"
+                }
+            },
+            "orders": {
+                "name": "Orders",
+                "desc": "You Can Review and Edit All Orders Here!",
+                "loading": "Loading Data...",
+                "pagetitle": "Manage Orders",
+                "table": {
+                    "id": "ID",
+                    "product": "Product",
+                    "username": "Username",
+                    "price": "Price",
+                    "status": "Status",
+                    "edit": "Edit"
+                },
+                "status": {
+                    "1": "Delivered",
+                    "2": "Awaiting Delivery",
+                    "3": "Returned",
+                    "4": "Link Provided"
+                },
+                "modal": {
+                    "title": "Edit Order",
+                    "formtitle": "Check Your Information Before You Continue!",
+                    "form": {
+                        "title": "Title",
+                        "titlePlace": "Please Enter a Title..",
+                        "price": "Price",
+                        "pricePlace": "Please Enter Price..",
+                        "status": "Status"
+                    },
+                    "button": "Update"
+                }
+            }
+        }
     }
 }
